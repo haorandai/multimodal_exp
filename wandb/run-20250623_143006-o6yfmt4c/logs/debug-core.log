@@ -1,0 +1,6 @@
+{"time":"2025-06-23T14:30:06.45013266+08:00","level":"INFO","msg":"main: starting server","port-filename":"/tmp/tmplvl4e5it/port-1421441.txt","pid":1421441,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2025-06-23T14:30:06.451323449+08:00","level":"INFO","msg":"server is running","addr":{"IP":"127.0.0.1","Port":33429,"Zone":""}}
+{"time":"2025-06-23T14:30:06.45143212+08:00","level":"INFO","msg":"Will exit if parent process dies.","ppid":1421441}
+{"time":"2025-06-23T14:30:06.608562836+08:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:41270"}
+{"time":"2025-06-23T14:30:06.613872563+08:00","level":"INFO","msg":"handleInformInit: received","streamId":"o6yfmt4c","id":"127.0.0.1:41270"}
+{"time":"2025-06-23T14:42:56.002606841+08:00","level":"INFO","msg":"received shutdown signal","signal":15}
