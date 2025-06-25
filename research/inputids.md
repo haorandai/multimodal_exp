@@ -47,6 +47,8 @@ DEFAULT_IM_END_TOKEN = "<im_end>"        # 图像结束
 
 ### 图片处理过程
 
+1.切Patch
+
 完整的图片(3328, 4864)
 
 ​    ↓ (通过process_images)
@@ -56,17 +58,19 @@ DEFAULT_IM_END_TOKEN = "<im_end>"        # 图像结束
 图像patches: torch.Size([1, 5, 3, 336, 336]) ([batch size, patches, Channels, Patch D1, Patch D2])
 
 
-
+2. 转Token
+   
 5个patches (336×336像素) 
 
 ​    ↓ (通过CLiP Vision Encoder)
 
-5个patches × 576 vision tokens/patch(将336×336的patch分割成24×24=576个小patch) = 2,880 个vision tokens
+5个patches × 576 vision tokens/patch(将336×336的patch分割成24×24=576个小patch) = 2880 个vision tokens
 
 
-
+3. 插Token
+   
 原input_ids: 59 tokens (包含1个-200占位符)
 
 ​         ↓ (替换过程)
 
-最终input_ids: 2,938 tokens (2,880个图像tokens + 58个文本tokens)
+最终input_ids: 2938 tokens (2880个图像tokens + 58个文本tokens)
