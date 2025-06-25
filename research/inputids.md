@@ -10,11 +10,13 @@ input_ids是一个包含文本序列的2D矩阵[batch_size, sequence_length]
 - IMAGE Token
 IMAGE_TOKEN_INDEX = -200 
 作用：图像内容占位符，标记图像应该插入位置
-'''
+
 DEFAULT_IM_START_TOKEN = "<im_start>"    # 图像开始
+
 DEFAULT_IMAGE_TOKEN = "<image>"          # 图像占位符 (对应ID -200)
+
 DEFAULT_IM_END_TOKEN = "<im_end>"        # 图像结束
-'''
+
 
 - BOS Token: 
 tokenizer.bos_token_id 
