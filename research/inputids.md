@@ -4,7 +4,7 @@ input_ids是一个包含文本序列的2D矩阵[batch_size, sequence_length]
 每行代表一个样本的token序列，每个元素是一个token的id值（所以叫input_ids）
 
 ### 序列结构：
-<s>(BOS) → \[对话模板开始\] → \[系统提示\] → \[USER:\] → \[图像\] → \[用户问题\] → \[ASSISTANT:\]
+\<s\>(BOS) → \[对话模板开始\] → \[系统提示\] → \[USER:\] → \[图像\] → \[用户问题\] → \[ASSISTANT:\]
 
 ### 特殊token
 - IMAGE Token
