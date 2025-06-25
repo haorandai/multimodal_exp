@@ -36,6 +36,7 @@ tokenizer.unk_token_id
 作用：位置词汇占位符，遇到词汇表外token使用，较少遇到
 
 示例：
+
 [BOS, text_tokens..., IM_START, IMAGE(-200), IM_END, text_tokens..., EOS]
 
 [1,   319, 13563..., im_start,    -200,     im_end,   29901...]
